@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-poppins: Poppins;
+    --font-raleway: Raleway;
+  
+    /* font sizes */
+    --font-size-4xl: 23px;
+    --font-size-10xl: 29px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-red: #ff0000;
+    --color-black: #000;
+  
+    /* Paddings */
+    --padding-xl: 20px;
+  
+    /* Border radiuses */
+    --br-3xs: 10px;
+    --br-6xs: 7px;
+  }
+  
+  

@@ -1,0 +1,624 @@
+
+  .task-history-inner {
+    align-self: stretch;
+    justify-content: flex-end;
+    padding: 0 16px 0 3px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+  .user-profile-icon {
+    width: 25px;
+    height: 25px;
+    position: relative;
+  }
+  .user-profile-wrapper {
+    height: 39px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2px var(--padding-4xs) 0 0;
+    box-sizing: border-box;
+  }
+  .full-fill-the {
+    margin: 0;
+    width: 327px;
+    position: relative;
+    font-size: inherit;
+    letter-spacing: 0.5px;
+    line-height: 150%;
+    font-weight: 700;
+    font-family: inherit;
+    display: inline-block;
+    max-width: 100%;
+  }
+  .notifications-icon {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    object-fit: cover;
+  }
+  .frame-group,
+  .task-history-child {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  .list-popup-1{
+    margin-bottom:10px;
+    font-size: 16px;
+  }
+  .frame-group {
+    flex: 1;
+    justify-content: space-between;
+    gap: var(--gap-l);
+  }
+  .task-history-child {
+    width: 682px;
+    justify-content: flex-end;
+    padding: 0 25px 6.699999999999818px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 26px;
+    color: var(--color-red);
+  }
+  .enter-your-name {
+    position: relative;
+    letter-spacing: 0.5px;
+    line-height: 180%;
+    display: inline-block;
+    min-width: 124px;
+  }
+  .cards-container {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-mid);
+    box-sizing: border-box;
+    font-size: var(--font-size-sm);
+    color: var(--neutral-grey);
+  }
+  .card-1-child {
+    height: 35px;
+    width: 300px;
+    position: relative;
+    border-radius: var(--br-xl);
+    background-color: var(--color-gainsboro);
+    display: none;
+    max-width: 100%;
+  }
+  .nickname {
+    width: 277px;
+    position: relative;
+    letter-spacing: 0.5px;
+    line-height: 17.1px;
+    font-weight: 500;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .card-1,
+  .card-2-child {
+    width: 300px;
+    border-radius: var(--br-xl);
+    background-color: var(--color-gainsboro);
+  }
+  .card-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+   padding:12px;
+    box-sizing: border-box;
+  }
+  .card-2-child {
+    height: 35px;
+    position: relative;
+    display: none;
+    max-width: 100%;
+  }
+  .lastname {
+    width: 277px;
+    position: relative;
+    letter-spacing: 0.5px;
+    line-height: 17.1px;
+    font-weight: 500;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .card-2 {
+    width: 300px;
+    border-radius: var(--br-xl);
+    background-color: var(--color-gainsboro);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+  .enter-your-address {
+    position: relative;
+    letter-spacing: 0.5px;
+    line-height: 180%;
+  }
+  .cards-container1 {
+    width: 174px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-mid);
+    box-sizing: border-box;
+    font-size: var(--font-size-sm);
+    color: var(--neutral-grey);
+  }
+  .card-3-child {
+    height: 35px;
+    width: 300px;
+    position: relative;
+    border-radius: var(--br-xl);
+    background-color: var(--color-gainsboro);
+    display: none;
+    max-width: 100%;
+  }
+  .areastreet-rad {
+    width: 277px;
+    position: relative;
+    letter-spacing: 0.5px;
+    line-height: 17.1px;
+    font-weight: 500;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .card-3,
+  .card-4-child {
+    width: 300px;
+    border-radius: var(--br-xl);
+    background-color: var(--color-gainsboro);
+  }
+  .card-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+  .card-4-child {
+    height: 35px;
+    position: relative;
+    display: none;
+    max-width: 100%;
+  }
+  .towncity {
+    width: 277px;
+    position: relative;
+    letter-spacing: 0.5px;
+    line-height: 17.1px;
+    font-weight: 500;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .card-4,
+  .card-5-child {
+    width: 300px;
+    border-radius: var(--br-xl);
+    background-color: var(--color-gainsboro);
+  }
+  .card-4 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+  .card-5-child {
+    height: 35px;
+    position: relative;
+    display: none;
+    max-width: 100%;
+  }
+  .house-no {
+    width: 277px;
+    position: relative;
+    letter-spacing: 0.5px;
+    line-height: 17.1px;
+    font-weight: 500;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .card-5 {
+    width: 300px;
+    border-radius: var(--br-xl);
+    background-color: var(--color-gainsboro);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+  .enter-your-aadhar {
+    position: relative;
+    letter-spacing: 0.5px;
+    line-height: 180%;
+  }
+  .cards-container2 {
+    width: 233px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-mid);
+    box-sizing: border-box;
+    font-size: var(--font-size-sm);
+    color: var(--neutral-grey);
+  }
+  .card-6-child,
+  .div1 {
+    position: relative;
+    max-width: 100%;
+  }
+  .card-6-child {
+    height: 35px;
+    width: 300px;
+    border-radius: var(--br-xl);
+    background-color: var(--color-gainsboro);
+    display: none;
+  }
+  .div1 {
+    width: 330px;
+    letter-spacing: 0.5px;
+    line-height: 17px;
+    font-weight: 500;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .card-6 {
+    width: 300px;
+    border-radius: var(--br-xl);
+    background-color: var(--color-gainsboro);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+  .enter-your-date {
+    position: relative;
+    letter-spacing: 0.5px;
+    line-height: 180%;
+  }
+  .cards-container3 {
+    width: 206px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-mid);
+    box-sizing: border-box;
+    font-size: var(--font-size-sm);
+    color: var(--neutral-grey);
+  }
+  .card-7-child {
+    height: 35px;
+    width: 300px;
+    position: relative;
+    border-radius: var(--br-xl);
+    background-color: var(--color-gainsboro);
+    display: none;
+    max-width: 100%;
+  }
+  .div2 {
+    width: 277px;
+    position: relative;
+    letter-spacing: 0.5px;
+    line-height: 17.1px;
+    font-weight: 500;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .card-7 {
+    width: 300px;
+    border-radius: var(--br-xl);
+    background-color: var(--color-gainsboro);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+  .enter-name-card,
+  .your-details-form {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .enter-name-card {
+    flex: 1;
+    overflow-x: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 21.3px;
+  }
+  .your-details-form {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 29px 10.699999999999818px var(--padding-20xl);
+    box-sizing: border-box;
+    flex-shrink: 0;
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    color: var(--color-darkslategray);
+    font-family: var(--font-poppins);
+  }
+ 
+  .task-history-item {
+    position: relative;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .task-history {
+    width: 100%;
+    height: 1525px;
+    position: relative;
+    border-radius: 50px;
+    background-color: var(--color-white);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: var(--padding-mid) 6px 342px 0;
+    box-sizing: border-box;
+    gap: 64.30000000000018px;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 18px;
+    color: #000;
+    font-family: var(--font-poppins);
+  }
+  #openPopupButton{
+    border: none;
+    outline: none;
+  }
+  .bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: #ccc;  */
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    border-top: 1px solid #999; /* Border at the top of the bottom-bar */
+  }
+  
+  .bottom-item {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Circle shape */
+    transition: background-color 0.3s ease;
+  }
+  
+  .bottom-item i {
+    color:black; /* White color for icons */
+    font-size: 24px;
+  }
+  
+  .bottom-item:hover {
+    background-color:#FF0000; /* Darker orange on hover */
+  }
+  
+  .middel{
+      background-color: #FF0000;
+      color: #fff;
+  }
+  .bottom-item.active i {
+    color: #fff;
+  }
+  
+  .bottom-item:nth-child(3) {
+    transform: translateY(-15px); 
+  }
+  input[type="text"] {
+    border: none;
+    outline: none;
+    background-color: var(--color-gainsboro);
+    
+}
+input[type="tel"] {
+  border: none;
+  outline: none;
+  background-color: var(--color-gainsboro);
+}
+input[type="date"] {
+  border: none;
+  outline: none;
+  background-color: var(--color-gainsboro);
+}
+
+.custom-button {
+  position: relative;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 80%;
+  height:50px;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+  border-radius:10px;
+  font-weight: bold;
+  font-size:20px;
+  
+}
+
+.custom-button .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px; /* Adjust width as needed */
+  height: 80%;
+  margin-left:90%; /* Adjust padding as needed */
+  margin-top:0.4%;
+}
+.popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color:gray;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-out;
+}
+
+.popup.active {
+  display: block;
+  transform: translateY(0%);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .custom-button {
+      width: 100%;
+  }
+}
+
+  @media screen and (max-width: 675px) {
+    .task-history-child {
+      padding-left:5px;
+      padding-right: var(--padding-3xl);
+      box-sizing: border-box;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 450px) {
+    .frame-parent {
+      flex-wrap: wrap;
+    }
+    .areastreet-rad,
+    .div1,
+    .div2,
+    .house-no,
+    .lastname,
+    .nickname,
+    .towncity {
+      font-size: var(--font-size-lgi);
+      line-height: 35px;
+    }
+    .bg-wrapper {
+      padding-left: var(--padding-xl);
+      padding-right: var(--padding-xl);
+      box-sizing: border-box;
+    }
+    .task-history {
+      height:30px;
+      
+    }
+    
+  }
+  .task-container-1{
+    height:950px;
+  }
+    
+  #popupContainer {
+    display: none;
+  }
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    background-color:red;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #888;
+  }
+  
+  /* Animation */
+  .popup.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* Apply the animation to the element */
+  .slide-in-right {
+    animation: slideInRight 1s ease forwards;
+  }
+
+  /* Add custom styles as needed */
+  .container {
+    width: 200px;
+    height: 200px;
+   
+  }

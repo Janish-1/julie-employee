@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type='text/javascript'
+  src='http://code.jquery.com/jquery-1.6.2.js'></script>
+<style type='text/css'>
+#wrap {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  background: #EEE;
+  display: none;
+  z-index: 0;
+}
+
+.in, .out {
+  -webkit-animation-duration: 250ms;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+.show {
+  display: block !important;
+  z-index: 10;
+}
+
+.slideup.in {
+  -webkit-animation-name: slideUpIn;
+  -webkit-transform: translateY(0);
+}
+
+@-webkit-keyframes slideUpIn { 
+  0% {-webkit-transform: translateY(100%);}
+  100%{-webkit-transform:translateY(0);}
+}
+.slidedown.out {
+  -webkit-animation-name: slideDownOut;
+  -webkit-transform: translateY(100%);
+}
+
+@-webkit-keyframes slideDownOut { 
+  0% {-webkit-transform: translateY(0);}
+  100%{-webkit-transform:translateY(100%);}
+}
+</style>
+<script type='text/javascript'> 
+$(window).load(function(){
+$(function() {
+    $('#toggle').bind('click', function(){
+        var $wrap = $('#wrap');
+        var direction = $wrap.data('direction');
+        if(direction && direction === 'in'){
+            $wrap.removeClass('slideup in')
+                .addClass('slidedown out')
+                .data('direction', 'out');
+        }else{
+            $wrap.removeClass('slidedown out')
+                .addClass('slideup in show')
+                .data('direction','in');
+        }
+        $wrap.bind('webkitAnimationEnd', function(){
+            if($(this).data('direction') === 'out'){
+                    $(this).removeClass('show')
+                    .unbind('webkitAnimationEnd');
+            }
+        });
+    });
+});
+});
+</script>
+</head>
+<body>
+  <button id="toggle">Toggle</button>
+  <div id="wrap"></div>
+</body>
+</html>

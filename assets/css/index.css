@@ -1,0 +1,229 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+   
+}
+*{
+
+    box-sizing: border-box;
+
+}
+img{
+    display: inline-block;
+}
+.main{
+    width: auto;
+    height: auto;
+    margin-top: -2rem;
+}
+.top{
+    display: inline-block;
+    width: auto;
+
+}
+.side1{
+    z-index: -1;
+    position: absolute;
+    
+}
+.side2{
+    z-index: 2;
+    position:absolute;
+ 
+}
+.side3{
+    z-index: 3;
+    position:absolute;
+
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    margin-top: 20vh;
+    width: auto;
+    height: auto;
+    
+}
+.warning {
+    color: red;
+    font-weight: bold;
+}
+.logo img{
+   
+
+    width: 13rem !important;
+    
+
+}
+.side-right{
+
+    display: block;
+    
+}
+.side-right-img{
+    width: 4rem !important;
+    margin-top: -16vh;
+    width: 20%;
+    display: block;
+    float:right;
+ 
+}
+.inpu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+width: 80vw;
+    height: auto;
+  
+  justify-self: center !important;
+  
+  margin-left: 11vw !important;
+  margin-top: -35px !important;
+
+}
+.inpu_span1{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.inpu_span2{
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+    border: 2px solid rgb(233, 233, 233);
+    width: 100%;
+    border-radius: 7px;
+    
+}
+.inpu span img{
+    width: 30px;
+}
+.Mobile_no{
+    width: 100%;
+    height: 40px;
+    
+    border: none;
+    outline: none;
+    font-size: large;
+    z-index: 1;
+    
+}
+.Mobile_no :focus,.Mobile_no :hover{
+    border: none;
+    outline: none;
+}
+.rsndOTP{
+    align-self: flex-end;
+    
+    
+}
+.inpu_span1 a{
+    width: 100%;
+    
+}
+
+.OTPbutton{
+    margin-top: -6px;
+    background-color: red;
+    color: white;
+    height: 3rem;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 7px;
+    border: none;
+}
+.OTPbutton:hover{
+    cursor: pointer;
+}
+.otpBox{
+
+    
+    display: flex;
+   
+    
+}
+.otpBox input{
+    width: 3rem !important;
+    height: 4rem !important;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+input[type="password"]::placeholder {
+    text-align: center;
+}
+
+input[type="tel"] {
+    border: none;
+    outline: none;
+}
+.img-logo{
+    margin-top: 100px;
+}
+@media only screen and (max-width: 786px) {
+    .side1{
+        width: 50vw;
+    }
+    .side2{
+        width: 52vw;
+    }
+    .side3{
+        width: 40vw;
+    }
+    .logo img{
+        width: 50vw;
+    }
+    .inpu{
+        margin-left: 7vw;
+        display: inline-flex;
+        z-index: -1;
+    }
+
+}
+
+/*------------------- */
+h1{
+    /* display: flex; */
+    align-self: flex-start;
+    margin-bottom:150px;
+    font-size: 3rem;
+}
+.LogIn img{
+
+    width: 3rem ;
+margin-left: -12px;
+}
+.LogIn p{
+    font-size: 1rem;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    width: 80vw;
+    height: auto;
+  
+   justify-self: center !important;
+  
+  margin-left: 11vw !important;
+  margin-top: 200px !important;
+
+}
+.input-2{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}

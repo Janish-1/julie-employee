@@ -1,0 +1,178 @@
+.notification{
+        
+    width:100%;
+    height:900px;
+  
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+.back{
+   
+    width:100%;
+    height:50px;
+    box-sizing: border-box;
+    display: flex;
+}
+.heading{margin-left:110px;}
+.back1{
+    
+    width:30px;
+    height:30px;
+    margin-left:10px;
+    margin-top:30px ;
+}
+.progress-text{
+   
+    width:100%;
+    height:100px;
+    margin-top:60px;
+}
+.date{
+    width:100%;
+    height:100px;
+    display: flex;
+    margin-left:15px;
+}
+#fromDateInput,
+#toDateInput {
+    width: 120px; /* Increase the width */
+    height: 50px; /* Increase the height */
+    border-radius: 15px; /* Add border radius */
+    border: 1px solid #ccc; /* Add border for better visibility */
+    padding: 5px; /* Add padding for better spacing */
+    padding-left: 3px;
+    margin-bottom: 10px; /* Add margin to separate the text boxes */
+}
+.progress-arrow{
+    width:30px;
+    height: 20px;
+    margin-left:10px;
+    margin-top:50px;
+}
+.fromdate{
+    margin-left:40px;
+    
+}
+.progress-content{
+    width:200px;
+    height:300px;
+    margin-top:60px;
+    margin-left:30px;
+}
+.travel{
+    margin-bottom:30px;
+    font-size:20px;
+}
+.work{
+    margin-bottom:30px;
+    font-size:20px;
+}
+.task-complete{
+    margin-bottom: 20px;
+    font-size:20px;
+}
+.share{
+    width:90%;
+    margin-left:30px;
+   
+    height:50px;
+    color: white;
+    font-size: 30px;
+    background-color: red;
+    border-radius:25px;
+}
+
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: #ccc;  */
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    border-top: 1px solid #999; /* Border at the top of the bottom-bar */
+  }
+  
+  .bottom-item {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Circle shape */
+    transition: background-color 0.3s ease;
+  }
+  
+  .bottom-item i {
+    color:black; /* White color for icons */
+    font-size: 24px;
+  }
+  
+  .bottom-item:hover {
+    background-color:#FF0000; /* Darker orange on hover */
+  }
+  
+  .middel{
+      background-color: #FF0000;
+      color: #fff;
+  }
+  .bottom-item.active i {
+    color: #fff;
+  }
+  
+  .bottom-item:nth-child(3) {
+    transform: translateY(-15px); 
+  }
+@media only screen and (max-width: 600px) {
+    .notification {
+        width: 100%; /* Adjusted width for smaller screens */
+        margin: 0 auto; /* Center the notification horizontally */
+        top: 0%;
+    }
+    .progress-text h3 {
+        padding: 5px; /* Adjusted padding for smaller screens */
+        text-align: left; /* Align text to the left on smaller screens */
+        word-wrap: break-word; /* Allow content to wrap to the next line */
+    }
+}
+@media only screen and (width:360px) {
+    .progress-text h3 {
+        padding: 5px; /* Adjusted padding for smaller screens */
+        text-align: left; /* Align text to the left on smaller screens */
+        word-wrap: break-word; /* Allow content to wrap to the next line */
+    }
+    .heading{margin-left:90px;}
+    .progress-text{
+   
+        width:100%;
+        height:100px;
+        margin-top:60px;
+        margin-left: 10px;
+    }
+    .fromdate {
+        margin-left: 12px;
+      }
+}
+@media only screen and (max-width:1080px)and (min-width:800px) {
+    .date {
+     
+        align-items: center;
+        padding-left: 181px;
+      }
+      .progress-text {
+        text-align: center;}
+        .heading {
+            margin-left: 287px;
+         
+          }
+          .date {
+            width: 71%;}
+}

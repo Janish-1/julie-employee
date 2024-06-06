@@ -1,4 +1,4 @@
-package com.julieemployee
+package com.anonymous.julieemployee
 
 import android.app.Application
 import android.content.res.Configuration

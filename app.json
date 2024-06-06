@@ -2,6 +2,12 @@
   "expo": {
     "name": "julie-employee",
     "slug": "julie-employee",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "android": {
+      "package": "com.anonymous.julieemployee"
+    },
+    "ios": {
+      "bundleIdentifier": "com.anonymous.julieemployee"
+    }
   }
 }

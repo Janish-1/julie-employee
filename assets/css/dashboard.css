@@ -1,0 +1,234 @@
+/* CSS for the logo */
+.logo {
+    text-align: center; /* Center align the logo */
+    margin-bottom: 20px; /* Add space below the logo */
+    left:4%;
+    margin-top:5%;
+}
+
+.logo img {
+    width: 200px; /* Adjust the width of the logo as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+.sidemenu{
+    color: black;
+}
+.w3-bar-block .w3-bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+    color: black;
+    font-size:1.3rem;
+
+}
+
+.w3-sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: red;
+ position: fixed !important;
+  z-index: 1;
+  overflow: auto;
+ 
+ 
+}
+@keyframes moveUpDown {
+  0% {
+      top: 100;
+  }
+  100% {
+      top: 0px; /* Adjust this value to change the distance */
+  }
+}
+.w3-white{
+    background-color: white !important;
+  }
+  .profile-popup{
+    width:195px;
+    height:195px;
+    background-color:black;
+    position:fixed;
+    top:24%;
+    left: 44%;
+    z-index: 999;
+    border-radius: 50%;
+    border: 2px solid red;
+  }
+  .profile-content{
+    margin-top:13%;
+    margin-left:0%;
+    text-align: center;
+  }
+   
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: #ccc;  */
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    border-top: 1px solid #999; /* Border at the top of the bottom-bar */
+  }
+  
+  .bottom-item {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Circle shape */
+    transition: background-color 0.3s ease;
+  }
+  
+  .bottom-item i {
+    color:black; /* White color for icons */
+    font-size: 24px;
+  }
+  
+  .bottom-item:hover {
+    background-color:#FF0000; /* Darker orange on hover */
+  }
+  
+  .middel{
+      background-color: #FF0000;
+      color: #fff;
+  }
+  .bottom-item.active i {
+    color: #fff;
+  }
+  
+  .bottom-item:nth-child(3) {
+    transform: translateY(-15px); 
+  }
+ .w3-button:hover {
+    /* color: #000 !important; */
+    background-color:white;
+  }
+  /* .w3-bar-item w3-button:hover{
+    background-color: white ;
+  } */
+
+  #popupContainer {
+    width:80%;
+    height:40%;
+   /* Initially hidden */
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid white;
+    z-index: 1000; /* To make sure it's on top of everything */
+    border-radius:20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  .button-popup{
+    margin-top:2%;
+    margin-left:15%;
+    height:50px;
+    width:70%;
+    border-radius:20px;
+    background-color: red;
+    color: black;
+    font-weight: bold;
+    font-size:20px;
+  }
+  .profile-popup1{
+    width: 100px;
+    height: 100px;
+    background-color:black;
+    position: absolute;
+    top: 20px;
+    left: 46%;
+    z-index: 999;
+    border-radius: 50%;
+  }
+  .heading-popup{
+    font-size:28px;
+    text-align: center;
+    width:auto;
+    height: auto;
+    margin-top:9%;
+    font-weight: bold;
+  }
+  .content-popup{
+    margin-left: 1%;
+    text-align: center;
+  }
+
+
+
+
+  @media only screen and (max-width: 600px) {
+    .button-popup {
+        margin-left: 5%; /* Adjust margin for smaller screens */
+        width: 90%; /* Adjust width for smaller screens */
+    }
+    .profile-popup1{
+        width: 70px; /* Adjust width for smaller screens */
+        height: 70px; /* Adjust height for smaller screens */
+        top: 10px; /* Adjust top position for smaller screens */
+        left: 40%; /* Adjust left position for smaller screens */
+    }
+    .heading-popup {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        margin-top: 20%; /* Adjust margin for smaller screens */
+    }
+    .content-popup {
+        margin-left: 0; /* Remove left margin for smaller screens */
+    }
+    #popupContainer{
+        height: 40%;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .button-popup {
+        margin-left:20%; /* Adjust margin for tablets */
+        width: 60%; /* Adjust width for tablets */
+    }
+    .profile-popup1{
+        width: 80px; /* Adjust width for tablets */
+        height: 80px; /* Adjust height for tablets */
+        top: 15px; /* Adjust top position for tablets */
+        left:43%; /* Adjust left position for tablets */
+    }
+    .heading-popup {
+        font-size: 26px; /* Adjust font size for tablets */
+        margin-top: 15%; /* Adjust margin for tablets */
+    }
+    .content-popup {
+        margin-left: 5%; /* Adjust left margin for tablets */
+    }
+    #popupContainer{
+        height: 30%;
+    }
+    .profile-content {
+      margin-top: 30%;}
+}
+.profile-popup{left:39%;}
+  @media only screen and (max-width: 600px) {
+    .profile-popup {
+        width: 120px; /* Adjust width for smaller screens */
+        height: 120px; /* Adjust height for smaller screens */
+        top:25%; /* Adjust top position for smaller screens */
+        left:36%; /* Adjust left position for smaller screens */
+        border-width: 1px; /* Adjust border width for smaller screens */
+        z-index: auto;
+    }
+    .profile-content {
+        margin-top:35%; /* Adjust margin top for smaller screens */
+        font-family:poppins
+    }
+}
