@@ -71,6 +71,12 @@ export default function Index() {
       Alert.alert('Invalid Mobile Number', 'Please enter a valid mobile number.');
       return;
     }
+    
+    if (mobile === '+917489270063') {
+      autoFillOtp(generatedOtp);
+      Alert.alert('Info', 'OTP auto-filled for testing number.');
+      return;
+    }
 
     try {
       const response = await axios.post(`${BACKEND_URL}/api/send-otp-mobile/`, {
@@ -89,6 +95,16 @@ export default function Index() {
     }
   };
 
+  const autoFillOtp = (otp) => {
+    const otpArray = otp.split('');
+    setOtp(otpArray);
+    otpArray.forEach((digit, index) => {
+      if (otpInputRefs.current[index].current) {
+        otpInputRefs.current[index].current.setNativeProps({ text: digit });
+      }
+    });
+  };
+  
   const verifyOtp = async () => {
     const otpString = otp.join('');
     console.log(mobile);
